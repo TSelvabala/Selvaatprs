@@ -1,0 +1,5 @@
+fo=open("foo.txt","w")
+fo.write("welcome")
+fo.write("hello")
+fo.close()
+print("file created and saved")
