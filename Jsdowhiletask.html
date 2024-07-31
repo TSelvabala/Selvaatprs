@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+<body>
+    <script>
+        var moviename="Raayan";
+        var movies;
+        var tickets=5;
+        do{
+            movies=prompt("Enter movie name","Enter...");
+            tickets=prompt("Enter how many tickets","Enter...");
+        }while(movies!=moviename && tickets!=5);
+        if(movies==moviename&&tickets<=5)
+        {
+            document.write("Ticket has booked")
+        }
+        else{
+            document.write("Sold Out")
+        }
+    </script>
+</body>
+</html>

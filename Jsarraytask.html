@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Task</title>
+</head>
+<body>
+    <script>
+        var arr=[42,55,67,78,89,74];
+        var tokens=parseInt(prompt("Enter Token Number:"));
+        var found=false;
+        for(i=0;i<6;i++)
+        {
+            if(arr[i]==tokens)
+            {
+                found=true;
+                break;
+            }
+        }
+        if(found)
+        {
+            document.writeln("Your vehicle is allocated to park")
+        }
+        else{
+            document.writeln("Your vehicle is not allocated to park")
+        }
+    </script>
+</body>
+</html>
