@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Jquery objects</h1>
+    <div id="demo"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+  var student={
+    name:"selva",
+    age:20,
+    roll_no:21,
+    result:function(){
+        return 95;
+    }
+  };
+  $("#demo").html("<h1>name:"+student.name+"<br>roll no:"+student.roll_no+"<br>marks:"+student.result()+"</h1>");
+  </script>
+</body>
+</html>
