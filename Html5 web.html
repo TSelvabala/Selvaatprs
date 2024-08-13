@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web storage</title>
+</head>
+<body>
+    <script>
+        if(sessionStorage.hits){
+            sessionStorage.hits=Number(sessionStorage.hits)+1;
+        }
+        else{
+            sessionStorage.hits=1;
+        }
+        document.write("total hits:"+sessionStorage.hits);
+    </script>
+    <p>refresh the page to increase number of hits</p>
+    <p>close the window and open it again and check the result</p>
+</body>
+</html>
