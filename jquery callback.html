@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback functions</title>
+</head>
+<body>
+    <h1>callback functions</h1>
+    <div id="hello">click here</div>
+    <p id="bye">click me to hide</p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $("#hello").click(function(){
+            alert("hello");
+        });
+        $("#bye").click(function(){
+            $("#bye").hide(function(){
+                alert("bye");
+            });
+        });
+    </script>
+</body>
+</html>
