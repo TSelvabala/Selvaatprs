@@ -1,5 +1,5 @@
 userinput=int(input("enter a number:"))
-print(userinput%)
+print(userinput)
 if 
     print("it is even number")
 else:
